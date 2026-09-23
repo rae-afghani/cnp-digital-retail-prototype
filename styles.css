@@ -69,3 +69,28 @@
   .vehicle-card img{width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:16/10;object-fit:cover}
   .card-actions,.deal-actions{width:100%!important;min-width:0!important}
 }
+
+/* CNP site-wide dark canvas */
+:root{--site-black:#111111;--site-panel:#171717;--site-panel-2:#1d1d1d;--site-border:#303030}
+html,body{background:var(--site-black);color:#f7f7f7}
+.top{background:var(--site-black);color:#fff;border-bottom-color:#292929}
+.section,.inventory-wrap,.specs,.content2{background:var(--site-black);color:#f7f7f7}
+.section.alt,.alt{background:#151515}
+.inventory-wrap{background:var(--site-black)}
+.results-head,.filters,.card,.vehicle-card,.panel,.review-grid article,.location-grid>div,.steps>div,.deal,.spec{background:var(--site-panel);color:#f7f7f7;border-color:var(--site-border)}
+.vehicle-card .body{background:var(--site-panel)}
+.sub,.card-meta,.mileage,.filter-note,.payment-assumptions,.range-limits{color:#aaa}
+.filter-group{border-top-color:#303030}
+.filter-group select,.two-selects select,.money-input,.inventory-search input,.searchbar input,.deal input{background:#fff;color:#111}
+.chip,.btn.light{background:#202020;color:#f7f7f7;border-color:#444}
+.tagrow span{background:#292929;color:#eee}
+.results-head select{background:#fff;color:#111;border-color:#ccc}
+.mobile-filter-title button{color:#ddd}
+.footer{background:var(--site-black);color:#aaa;border-top:1px solid #292929}
+@media(max-width:760px){
+ .filters{background:var(--site-panel)!important;color:#f7f7f7}
+ .mobile-filter-head{background:var(--site-panel);border-bottom-color:#333}
+ .mobile-filter-head button{color:#fff}
+ .mobile-sort-menu{background:var(--site-panel);border-color:#333}
+ .mobile-sort-menu button{background:var(--site-panel);color:#fff;border-bottom-color:#333}
+}
