@@ -23,3 +23,5 @@
 @media(max-width:700px){.trust>div{justify-content:start}.trust-icon{width:31px;height:31px}}
 
 .payment-assumptions{font-size:10px;line-height:1.45;color:#888;margin-top:8px;padding:8px 9px;background:#f7f7f7;border-left:2px solid var(--orange)}
+
+.money-input{display:flex;align-items:center;border:1px solid #aaa;background:#fff;margin-top:8px;min-height:38px}.money-input span{padding:0 0 0 10px;color:#555}.money-input input{width:100%;border:0;outline:0;padding:9px 10px 9px 5px;font:inherit;background:transparent}
