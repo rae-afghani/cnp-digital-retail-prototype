@@ -1,11 +1,11 @@
 /* Shop Your Way card motion */
 @media (max-width:760px){
-  .shop-way{overflow:visible!important;padding-bottom:70px!important}
+  .shop-way{overflow:visible!important;padding-bottom:18px!important}
   .shop-way .stack-categories{
     display:block!important;
     overflow:visible!important;
     position:relative!important;
-    padding-bottom:360px!important;
+    padding-bottom:72px!important;
   }
   .shop-way .stack-categories .category-tile{
     position:-webkit-sticky!important;
