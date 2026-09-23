@@ -48,3 +48,24 @@
   .inventory-grid{grid-template-columns:minmax(0,1fr)!important}
   .vehicle-card{width:100%!important;max-width:100%!important}
 }
+
+/* Definitive mobile inventory layout fix */
+@media(max-width:760px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  .inventory-hero{width:100%;max-width:100%;padding:38px 20px}
+  .inventory-hero h1{font-size:38px;line-height:1.08}
+  .inventory-search{width:100%;max-width:100%}
+  .inventory-wrap{display:block!important;width:100%!important;max-width:100%!important;padding:22px 20px!important;margin:0!important}
+  .inventory-wrap>main{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;padding:0!important}
+  .mobile-inventory-controls{display:grid!important;width:100%!important;max-width:100%!important;grid-template-columns:1fr!important;gap:10px!important;margin:0 0 16px!important}
+  .mobile-inventory-controls .mobile-control-btn{width:100%!important;max-width:100%!important;margin:0!important}
+  .results-head{display:block!important;width:100%!important;max-width:100%!important;margin:0 0 16px!important;padding:16px!important}
+  .results-top{display:block!important;width:100%!important}
+  .results-top>div{width:100%!important;min-width:0!important}
+  .results-top select{display:none!important}
+  .chips{width:100%!important;max-width:100%!important}
+  .vehicles{display:grid!important;grid-template-columns:minmax(0,1fr)!important;width:100%!important;max-width:100%!important;min-width:0!important;gap:16px!important}
+  .vehicle-card{width:100%!important;max-width:100%!important;min-width:0!important;overflow:hidden}
+  .vehicle-card img{width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:16/10;object-fit:cover}
+  .card-actions,.deal-actions{width:100%!important;min-width:0!important}
+}
