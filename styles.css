@@ -94,3 +94,12 @@ html,body{background:var(--site-black);color:#f7f7f7}
  .mobile-sort-menu{background:var(--site-panel);border-color:#333}
  .mobile-sort-menu button{background:var(--site-panel);color:#fff;border-bottom-color:#333}
 }
+
+/* Final dark-theme surface sweep: remove legacy white section backgrounds */
+body,main,section,.section,.alt,.inventory-wrap,.inventory-hero+.inventory-wrap,.vdp,.specs,.content2,.custom-banner,.custom-banner .copy,.why,.steps,.review-grid,.location-grid{background-color:#111!important}
+.card,.vehicle-card,.vehicle-card .body,.panel,.results-head,.filters,.deal,.spec,.steps>div,.review-grid article,.location-grid>div,.empty{background:#171717!important;color:#f7f7f7!important;border-color:#303030!important}
+.why-grid,.why-grid div{background:#171717!important}
+.payment-assumptions{background:#1d1d1d!important}
+.tagrow span{background:#292929!important;color:#eee!important}
+.chip{background:#202020!important;color:#f7f7f7!important;border-color:#444!important}
+.footer{background:#111!important}
