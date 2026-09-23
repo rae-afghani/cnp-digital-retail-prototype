@@ -32,3 +32,19 @@
 
 .mobile-filter-bar,.mobile-filter-head,.filter-backdrop{display:none}.two-selects{display:grid;grid-template-columns:1fr 1fr;gap:8px}.two-selects label{min-width:0}.two-selects select{width:100%}
 @media(max-width:760px){body{overflow-x:hidden}.inventory-layout{display:block!important}.mobile-filter-bar{display:flex;margin:0 0 14px}.mobile-filter-bar .btn{width:100%;min-height:46px}.filters{position:fixed!important;z-index:1001;top:0;right:0;bottom:0;left:auto;width:min(92vw,390px)!important;max-width:none!important;height:100%;overflow-y:auto;background:#fff;padding:0 18px 28px!important;transform:translateX(105%);transition:transform .25s ease;box-shadow:-10px 0 30px rgba(0,0,0,.14)}.filters.open{transform:translateX(0)}.mobile-filter-head{display:flex;position:sticky;top:0;z-index:2;align-items:center;justify-content:space-between;background:#fff;border-bottom:1px solid #ddd;padding:16px 0;margin-bottom:8px}.mobile-filter-head button{width:44px;height:44px;border:0;background:transparent;font-size:30px;line-height:1;cursor:pointer}.filter-backdrop{position:fixed;z-index:1000;inset:0;background:rgba(0,0,0,.42)}.filter-backdrop.open{display:block}.filters-open{overflow:hidden}.inventory-main,.inventory-results,.inventory-grid{min-width:0;width:100%}.vehicle-card{min-width:0}.payment-range-head{align-items:flex-start;flex-wrap:wrap}.payment-range-head b{white-space:normal;text-align:right}.two-selects{grid-template-columns:1fr 1fr}}
+
+.mobile-inventory-controls{display:none}
+@media(max-width:760px){
+  .mobile-inventory-controls{display:grid;grid-template-columns:1fr;gap:8px;width:100%;margin:0 0 16px;position:relative}
+  .mobile-inventory-controls .mobile-control-btn{display:flex;width:100%;max-width:none;min-height:48px;align-items:center;justify-content:space-between;padding:12px 16px}
+  .mobile-filter-bar{display:none!important}
+  .mobile-sort-menu{position:absolute;z-index:50;top:104px;left:0;right:0;background:#fff;border:1px solid #d8d8d8;padding:6px;box-shadow:0 10px 24px rgba(0,0,0,.12)}
+  .mobile-sort-menu[hidden]{display:none}
+  .mobile-sort-menu button{display:block;width:100%;min-height:44px;padding:10px 12px;border:0;border-bottom:1px solid #eee;background:#fff;text-align:left;font:inherit}
+  .mobile-sort-menu button:last-child{border-bottom:0}
+  .inventory-layout{display:block!important;width:100%!important;max-width:100%!important}
+  .inventory-main,.inventory-results,.inventory-grid,.results-head{width:100%!important;max-width:100%!important;min-width:0!important}
+  .results-head select{display:none!important}
+  .inventory-grid{grid-template-columns:minmax(0,1fr)!important}
+  .vehicle-card{width:100%!important;max-width:100%!important}
+}
