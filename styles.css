@@ -32,3 +32,14 @@
   .content2{display:block!important;width:auto!important;max-width:none!important;margin:18px 20px!important}
   .content2>.panel{width:100%!important;max-width:100%!important;box-sizing:border-box!important;margin-bottom:18px!important}
 }
+
+/* Mobile VDP sticky conversion CTA */
+.mobile-vdp-sticky{display:none}
+@media(max-width:760px){
+ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+ .mobile-vdp-sticky{position:fixed;z-index:1200;left:0;right:0;bottom:0;display:grid;grid-template-columns:7fr 3fr;gap:8px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(17,17,17,.96);border-top:1px solid #333;box-shadow:0 -10px 28px rgba(0,0,0,.35);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transform:translateY(115%);opacity:0;pointer-events:none;transition:transform .28s cubic-bezier(.22,.61,.36,1),opacity .2s ease}
+ .mobile-vdp-sticky.show{transform:translateY(0);opacity:1;pointer-events:auto}
+ .mobile-vdp-sticky .btn{width:100%!important;min-height:54px!important;margin:0!important;display:flex!important;align-items:center;justify-content:center;box-sizing:border-box}
+ .mobile-vdp-sticky .sticky-build{font-weight:850}
+ .mobile-vdp-sticky .sticky-call{background:#242424!important;color:#fff!important;border:1px solid #444!important;font-size:23px!important;text-decoration:none}
+}
