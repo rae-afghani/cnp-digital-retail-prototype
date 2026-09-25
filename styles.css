@@ -336,3 +336,27 @@
    padding-left:12px!important;
  }
 }
+
+/* Mobile drawer rows: match the requested wide rectangle */
+@media(max-width:760px){
+ .top #siteNav{
+   width:94vw!important;
+   max-width:94vw!important;
+   padding-left:8px!important;
+   padding-right:8px!important;
+ }
+ .top #siteNav .mobile-nav-head,
+ .top #siteNav>a{
+   width:calc(100% - 8px)!important;
+   max-width:none!important;
+   margin-left:0!important;
+   margin-right:8px!important;
+   box-sizing:border-box!important;
+ }
+ .top #siteNav>a{
+   justify-content:space-between!important;
+ }
+ .top #siteNav>a::after{
+   margin-left:auto!important;
+ }
+}
