@@ -154,3 +154,10 @@
  .top .nav a::after{content:'→';margin-left:auto;color:#777;font-weight:400}
  .top .nav a:last-child{border-bottom:0!important}
 }
+
+/* Compact mobile off-canvas navigation spacing */
+@media(max-width:760px){
+ .top .nav{padding:0 20px 20px!important}
+ .mobile-nav-head{min-height:64px!important;margin-bottom:4px!important}
+ .top .nav a{min-height:48px!important;padding:10px 2px!important;font-size:18px!important}
+}
