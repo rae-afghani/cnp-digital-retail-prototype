@@ -264,3 +264,30 @@
    box-sizing:border-box!important;
  }
 }
+
+/* Mobile nav: use full drawer width and compact stacked rows */
+@media(max-width:760px){
+ .top #siteNav{
+   width:min(82vw,360px)!important;
+   padding:0 12px!important;
+ }
+ .top #siteNav .mobile-nav-head{
+   width:100%!important;
+   box-sizing:border-box!important;
+ }
+ .top #siteNav>a{
+   width:100%!important;
+   max-width:100%!important;
+   height:46px!important;
+   min-height:46px!important;
+   padding:0 8px!important;
+   margin:0!important;
+   align-self:stretch!important;
+   justify-content:space-between!important;
+   box-sizing:border-box!important;
+ }
+ .top #siteNav>a::after{
+   margin-left:auto!important;
+   padding-left:16px!important;
+ }
+}
