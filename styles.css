@@ -254,3 +254,13 @@
    flex:0 0 auto!important;
  }
 }
+
+/* Full-width mobile drawer menu rows */
+@media(max-width:760px){
+ .top #siteNav>a{
+   width:100%!important;
+   max-width:none!important;
+   align-self:stretch!important;
+   box-sizing:border-box!important;
+ }
+}
