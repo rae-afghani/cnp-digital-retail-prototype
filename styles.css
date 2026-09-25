@@ -291,3 +291,11 @@
    padding-left:16px!important;
  }
 }
+
+/* Wider mobile navigation drawer */
+@media(max-width:760px){
+ .top #siteNav{
+   width:94vw!important;
+   max-width:94vw!important;
+ }
+}
