@@ -129,3 +129,13 @@
 .trust-item .trust-copy,
 .trust-item .trust-copy b,
 .trust-item .trust-copy small{text-align:left!important}
+
+/* CARFAX trust item alignment correction */
+.trust-item:has(.trust-copy b:first-child){text-align:left!important}
+.trust-item .trust-copy{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;text-align:left!important}
+.trust-item .trust-copy b,
+.trust-item .trust-copy small{align-self:flex-start!important;text-align:left!important;margin-left:0!important;margin-right:0!important}
+@media(max-width:760px){
+ .trust-item{justify-content:flex-start!important;text-align:left!important}
+ .trust-item .trust-copy{align-items:flex-start!important;text-align:left!important}
+}
