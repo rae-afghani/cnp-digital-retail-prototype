@@ -161,3 +161,10 @@
  .mobile-nav-head{min-height:64px!important;margin-bottom:4px!important}
  .top .nav a{min-height:48px!important;padding:10px 2px!important;font-size:18px!important}
 }
+
+/* Tighter off-canvas menu alignment + vertical rhythm */
+@media(max-width:760px){
+ .top .nav{padding-left:10px!important;padding-right:14px!important}
+ .mobile-nav-head{padding-left:2px!important;padding-right:2px!important}
+ .top .nav a{min-height:42px!important;padding:6px 4px!important;font-size:18px!important}
+}
