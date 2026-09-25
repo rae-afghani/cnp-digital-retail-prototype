@@ -423,3 +423,18 @@
    box-sizing:border-box!important;
  }
 }
+
+.desktop-nav-links{display:contents}.mobile-nav-group,.mobile-reservation{display:none}
+@media(max-width:760px){
+.top #siteNav{display:block!important;overflow-y:auto!important;height:100dvh!important;padding:0 16px 24px!important}
+.top #siteNav .mobile-nav-head{display:flex!important;height:56px!important;min-height:56px!important;width:100%!important;padding:0 8px!important;margin:0!important;align-items:center!important;justify-content:space-between!important;border-bottom:1px solid #2d2d2d!important}
+.desktop-nav-links{display:none!important}
+.mobile-nav-group{display:block!important;width:100%!important;border-bottom:1px solid #292929!important}
+.mobile-nav-toggle{appearance:none;border:0;background:transparent;color:#fff;width:100%;height:54px;padding:0 8px;display:flex;align-items:center;justify-content:space-between;font:700 16px/1 Inter,Arial,sans-serif;letter-spacing:.02em;text-align:left;cursor:pointer}
+.nav-chevron{font-size:20px;color:#f36b21;transition:transform .2s ease}.mobile-nav-group.open .nav-chevron{transform:rotate(180deg)}
+.mobile-nav-submenu{display:none;padding:0 8px 8px}.mobile-nav-group.open .mobile-nav-submenu{display:block}
+.top #siteNav .mobile-nav-submenu a{display:flex!important;width:100%!important;max-width:none!important;height:38px!important;min-height:38px!important;margin:0!important;padding:0 10px!important;align-items:center!important;color:#c9c9c9!important;font-size:15px!important;font-weight:500!important;border:0!important}
+.top #siteNav .mobile-nav-submenu a::after{display:none!important}
+.top #siteNav .mobile-reservation{display:flex!important;width:100%!important;max-width:none!important;height:52px!important;min-height:52px!important;margin:14px 0 0!important;padding:0 10px!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;border-top:1px solid #292929!important;border-bottom:1px solid #292929!important;color:#fff!important;font-weight:700!important}
+.top #siteNav .mobile-reservation::after{display:none!important}
+}
