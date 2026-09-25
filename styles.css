@@ -223,3 +223,34 @@
    line-height:1.05!important;
  }
 }
+
+/* Mobile nav definitive compact layout */
+@media(max-width:760px){
+ .top #siteNav{
+   gap:0!important;
+   justify-content:flex-start!important;
+   padding:0 8px!important;
+ }
+ .top #siteNav .mobile-nav-head{
+   min-height:44px!important;
+   height:44px!important;
+   padding:0 8px!important;
+   margin:0!important;
+ }
+ .top #siteNav>a{
+   display:flex!important;
+   flex:0 0 auto!important;
+   align-items:center!important;
+   justify-content:space-between!important;
+   gap:12px!important;
+   min-height:0!important;
+   height:42px!important;
+   padding:0 8px!important;
+   margin:0!important;
+   line-height:1!important;
+ }
+ .top #siteNav>a::after{
+   margin-left:auto!important;
+   flex:0 0 auto!important;
+ }
+}
