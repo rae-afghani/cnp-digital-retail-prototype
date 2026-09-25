@@ -375,3 +375,14 @@
     margin-left:auto!important;
   }
 }
+
+/* Shorter mobile navigation rows */
+@media(max-width:760px){
+ .top #siteNav>a{
+   flex:0 0 34px!important;
+   height:34px!important;
+   min-height:34px!important;
+   padding-top:0!important;
+   padding-bottom:0!important;
+ }
+}
