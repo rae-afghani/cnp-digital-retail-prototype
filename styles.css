@@ -168,3 +168,24 @@
  .mobile-nav-head{padding-left:2px!important;padding-right:2px!important}
  .top .nav a{min-height:42px!important;padding:6px 4px!important;font-size:18px!important}
 }
+
+/* Mobile drawer compact pass — flush-left links + minimal vertical whitespace */
+@media(max-width:760px){
+ .top .nav{
+   padding:0 10px 12px 0!important;
+ }
+ .mobile-nav-head{
+   min-height:52px!important;
+   margin:0 0 2px!important;
+   padding:0 10px!important;
+ }
+ .top .nav a{
+   min-height:0!important;
+   height:auto!important;
+   padding:10px 10px!important;
+   margin:0!important;
+   font-size:17px!important;
+   line-height:1.15!important;
+ }
+ .top .nav a::after{margin-left:auto!important}
+}
