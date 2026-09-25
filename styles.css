@@ -386,3 +386,40 @@
    padding-bottom:0!important;
  }
 }
+
+/* Mobile nav: compact grid layout prevents flex from stretching rows */
+@media(max-width:760px){
+ .top #siteNav{
+   display:grid!important;
+   grid-template-columns:1fr!important;
+   grid-template-rows:48px repeat(6,52px)!important;
+   grid-auto-rows:52px!important;
+   align-content:start!important;
+   align-items:stretch!important;
+   justify-content:stretch!important;
+   gap:0!important;
+   height:100dvh!important;
+   padding:0 8px!important;
+ }
+ .top #siteNav .mobile-nav-head{
+   grid-row:auto!important;
+   height:48px!important;
+   min-height:48px!important;
+   width:100%!important;
+   margin:0!important;
+   padding:0 10px!important;
+ }
+ .top #siteNav>a{
+   display:flex!important;
+   width:100%!important;
+   max-width:none!important;
+   height:52px!important;
+   min-height:52px!important;
+   margin:0!important;
+   padding:0 12px!important;
+   align-items:center!important;
+   justify-content:space-between!important;
+   align-self:stretch!important;
+   box-sizing:border-box!important;
+ }
+}
