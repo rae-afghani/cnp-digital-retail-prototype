@@ -438,3 +438,28 @@
 .top #siteNav .mobile-reservation{display:flex!important;width:100%!important;max-width:none!important;height:52px!important;min-height:52px!important;margin:14px 0 0!important;padding:0 10px!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;border-top:1px solid #292929!important;border-bottom:1px solid #292929!important;color:#fff!important;font-weight:700!important}
 .top #siteNav .mobile-reservation::after{display:none!important}
 }
+/* Smooth accordion motion for mobile nav */
+@media(max-width:760px){
+ .mobile-nav-submenu{
+   display:grid!important;
+   grid-template-rows:0fr;
+   opacity:0;
+   transform:translateX(-12px);
+   padding:0 8px!important;
+   transition:grid-template-rows .34s cubic-bezier(.22,1,.36,1),
+              opacity .24s ease,
+              transform .34s cubic-bezier(.22,1,.36,1),
+              padding .34s cubic-bezier(.22,1,.36,1);
+ }
+ .mobile-nav-submenu>a{overflow:hidden}
+ .mobile-nav-group.open .mobile-nav-submenu{
+   grid-template-rows:1fr;
+   opacity:1;
+   transform:translateX(0);
+   padding:0 8px 8px!important;
+ }
+ .mobile-nav-submenu{overflow:hidden}
+ .mobile-nav-group .nav-chevron{
+   transition:transform .34s cubic-bezier(.22,1,.36,1)!important;
+ }
+}
