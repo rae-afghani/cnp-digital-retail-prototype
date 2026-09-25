@@ -124,3 +124,8 @@
  .trust-item .trust-copy b{font-size:13px!important}
  .trust-item .trust-copy small{font-size:11px!important}
 }
+
+/* Keep trust-banner copy left aligned */
+.trust-item .trust-copy,
+.trust-item .trust-copy b,
+.trust-item .trust-copy small{text-align:left!important}
