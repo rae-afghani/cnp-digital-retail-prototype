@@ -506,3 +506,6 @@
  .deal .price-compliance{margin-top:18px;padding-top:18px}
  .deal .finance-example{padding:16px}
 }
+.deal .visible-price-breakdown{margin:14px 0 0!important;padding:10px 0 0!important;border-top:1px solid #333!important;border-bottom:0!important}
+.deal .visible-price-breakdown .row{font-size:13px!important;padding:5px 0!important}
+.deal .visible-price-breakdown .row.total{padding-top:10px!important;margin-top:5px!important;border-top:1px solid #333!important}
