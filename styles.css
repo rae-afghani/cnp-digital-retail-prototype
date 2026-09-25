@@ -463,3 +463,24 @@
    transition:transform .34s cubic-bezier(.22,1,.36,1)!important;
  }
 }
+/* Mobile nav accordion: standard vertical collapse, matched to drawer speed */
+@media(max-width:760px){
+ .mobile-nav-submenu{
+   display:block!important;
+   max-height:0!important;
+   overflow:hidden!important;
+   opacity:1!important;
+   transform:none!important;
+   padding:0 8px!important;
+   transition:max-height .34s cubic-bezier(.22,.61,.36,1),
+              padding .34s cubic-bezier(.22,.61,.36,1)!important;
+ }
+ .mobile-nav-group.open .mobile-nav-submenu{
+   max-height:280px!important;
+   transform:none!important;
+   padding:0 8px 8px!important;
+ }
+ .mobile-nav-group .nav-chevron{
+   transition:transform .34s cubic-bezier(.22,.61,.36,1)!important;
+ }
+}
