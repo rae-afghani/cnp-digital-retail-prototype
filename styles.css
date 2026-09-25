@@ -189,3 +189,28 @@
  }
  .top .nav a::after{margin-left:auto!important}
 }
+
+/* Mobile drawer hard reset — override inherited desktop nav gap/centering */
+@media(max-width:760px){
+ .top #siteNav{
+   justify-content:flex-start!important;
+   align-items:stretch!important;
+   gap:0!important;
+   padding:0 8px!important;
+ }
+ .top #siteNav .mobile-nav-head{
+   width:100%!important;
+   min-height:48px!important;
+   padding:0 4px!important;
+   margin:0!important;
+   box-sizing:border-box!important;
+ }
+ .top #siteNav>a{
+   width:100%!important;
+   min-height:0!important;
+   padding:8px 4px!important;
+   margin:0!important;
+   box-sizing:border-box!important;
+   line-height:1.1!important;
+ }
+}
