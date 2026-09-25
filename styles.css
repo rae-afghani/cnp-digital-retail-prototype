@@ -69,3 +69,22 @@
  .hero .actions .btn{width:100%!important;max-width:100%!important;box-sizing:border-box!important;text-align:center!important;min-height:52px!important}
  .trust-icon{border:0!important;border-radius:0!important;width:34px!important;height:34px!important;background:transparent!important}
 }
+
+/* Single-row continuously sliding trust banner */
+.trust{display:block!important;width:100%;max-width:none!important;overflow:hidden!important;padding:0!important;background:#111!important;border-top:1px solid #252525;border-bottom:1px solid #252525}
+.trust-track{display:flex;width:max-content;will-change:transform;animation:trustMarquee 26s linear infinite}
+.trust-set{display:flex;flex:none;align-items:center;white-space:nowrap}
+.trust-set>div{display:grid;grid-template-columns:auto auto;grid-template-rows:auto auto;column-gap:10px;row-gap:1px;align-items:center;min-width:max-content;padding:20px 38px;border-right:1px solid #2c2c2c}
+.trust-set .trust-icon{grid-row:1/3;grid-column:1;display:flex!important;align-items:center;justify-content:center;width:auto!important;height:auto!important;font-size:28px;line-height:1;border:0!important;background:transparent!important}
+.trust-set b{grid-column:2;grid-row:1;font-size:14px;letter-spacing:.02em}
+.trust-set small{grid-column:2;grid-row:2;color:#aaa;font-size:12px}
+.trust:hover .trust-track{animation-play-state:paused}
+@keyframes trustMarquee{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@media(max-width:760px){
+ .trust-track{animation-duration:20s}
+ .trust-set>div{padding:16px 24px}
+ .trust-set .trust-icon{font-size:24px!important}
+ .trust-set b{font-size:13px}
+ .trust-set small{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){.trust-track{animation:none}}
