@@ -105,3 +105,22 @@
  .trust .trust-set b{font-size:13px!important}
  .trust .trust-set small{font-size:11px!important}
 }
+
+/* Trust marquee v3 — flat markup avoids legacy trust descendant rules */
+.trust{display:block!important;width:100%!important;height:68px!important;min-height:68px!important;overflow:hidden!important;padding:0!important;margin:0!important;background:#111!important}
+.trust>.trust-track{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:stretch!important;width:max-content!important;height:68px!important;gap:0!important;padding:0!important;margin:0!important;animation:trustMarqueeFlat 26s linear infinite!important;will-change:transform}
+.trust-item{display:inline-flex!important;flex:0 0 auto!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important;height:68px!important;min-width:max-content!important;padding:0 34px!important;margin:0!important;border-right:1px solid #2c2c2c!important;box-sizing:border-box!important;white-space:nowrap!important}
+.trust-item .trust-icon{display:inline-block!important;flex:0 0 auto!important;width:auto!important;height:auto!important;margin:0!important;padding:0!important;border:0!important;background:none!important;font-size:25px!important;line-height:1!important}
+.trust-item .trust-copy{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:3px!important;width:auto!important;height:auto!important;margin:0!important;padding:0!important}
+.trust-item .trust-copy b,.trust-item .trust-copy small{display:block!important;position:static!important;width:auto!important;height:auto!important;margin:0!important;padding:0!important;white-space:nowrap!important}
+.trust-item .trust-copy b{color:#fff!important;font-size:14px!important;line-height:1.1!important}
+.trust-item .trust-copy small{color:#aaa!important;font-size:12px!important;line-height:1.1!important;font-weight:400!important}
+@keyframes trustMarqueeFlat{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@media(max-width:760px){
+ .trust{height:62px!important;min-height:62px!important}
+ .trust>.trust-track{height:62px!important;animation-duration:20s!important}
+ .trust-item{height:62px!important;padding:0 22px!important;gap:8px!important}
+ .trust-item .trust-icon{font-size:22px!important}
+ .trust-item .trust-copy b{font-size:13px!important}
+ .trust-item .trust-copy small{font-size:11px!important}
+}
